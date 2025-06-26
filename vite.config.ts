@@ -4,6 +4,7 @@ import process from 'node:process'
 import uni from '@dcloudio/vite-plugin-uni'
 import inject from '@rollup/plugin-inject'
 import legacy from '@vitejs/plugin-legacy'
+import unoCss from 'unocss/vite'
 import autoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
 import { compression } from 'vite-plugin-compression2'
@@ -36,6 +37,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
     },
     plugins: [
       (uni as any).default(),
+      unoCss(),
       inject({
         feConfig: path.resolve(__dirname, `src/config/${mode}`),
       }),

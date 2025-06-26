@@ -4,8 +4,10 @@ import { FlatCompat } from '@eslint/eslintrc'
 const compat = new FlatCompat()
 
 export default antfu({
+  unocss: true,
   formatters: {
     css: true,
+    html: true,
   },
   overrides: {
     vue: {
