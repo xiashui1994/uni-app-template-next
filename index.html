@@ -27,5 +27,11 @@
   <body>
     <div id="app"><!--app-html--></div>
     <script type="module" src="/src/main.ts"></script>
+    <script type="text/javascript">
+      var userAgent = navigator.userAgent
+      if (/micromessenger/i.test(userAgent) || /miniProgram/i.test(userAgent)) {
+        document.write('<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"><\/script>')
+      }
+    </script>
   </body>
 </html>
