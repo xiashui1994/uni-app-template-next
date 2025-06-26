@@ -22,10 +22,9 @@ export default defineConfig({
   ],
   safelist: [],
   rules: [
-    [
-      'p-safe',
-      { padding: 'env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)' },
-    ],
+    ['one-txt-cut', { 'overflow': 'hidden', 'white-space': 'nowrap', 'text-overflow': 'ellipsis' }],
+    ['txt-cut', { 'overflow': 'hidden', 'display': '-webkit-box', '-webkit-box-orient': 'vertical', 'line-clamp': '2', '-webkit-line-clamp': '2' }],
+    ['p-safe', { padding: 'env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)' }],
     ['pt-safe', { 'padding-top': 'env(safe-area-inset-top)' }],
     ['pb-safe', { 'padding-bottom': 'env(safe-area-inset-bottom)' }],
   ],
