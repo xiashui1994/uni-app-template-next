@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "antfu.unocss",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "kiko.wot-design-uni-snippets",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

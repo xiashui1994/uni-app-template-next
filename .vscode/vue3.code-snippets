@@ -1,0 +1,44 @@
+{
+  "Vue3 SFC": {
+    "scope": "vue",
+    "prefix": "v3",
+    "body": [
+      "<template>",
+      "  <view class=\"\">$1</view>",
+      "</template>\n",
+      "<script lang=\"ts\" setup>",
+      "$2",
+      "</script>\n",
+      "<style lang=\"scss\" scoped>",
+      "$3",
+      "</style>\n",
+    ],
+  },
+  "Vue Template": {
+    "scope": "vue",
+    "prefix": "te",
+    "body": [
+      "<template>",
+      "  <view class=\"\">$1</view>",
+      "</template>\n"
+    ],
+  },
+  "Vue Script": {
+    "scope": "vue",
+    "prefix": "sc",
+    "body": [
+      "<script lang=\"ts\" setup>",
+      "$1",
+      "</script>\n"
+    ],
+  },
+  "Vue Style": {
+    "scope": "vue",
+    "prefix": "st",
+    "body": [
+      "<style lang=\"scss\" scoped>",
+      "$1",
+      "</style>\n"
+    ],
+  }
+}
