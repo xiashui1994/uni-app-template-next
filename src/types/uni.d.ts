@@ -1,11 +1,13 @@
-import type { AjaxInstance, AjaxRequestConfig } from 'uni-ajax'
+import type { Alova } from 'alova'
 
 declare global {
   interface Uni {
-    $http: AjaxInstance<AjaxRequestConfig>
-    $u: {
-      [key: string]: any
-    }
+    $http: Alova<AlovaGenerics>
+  }
+  interface ApiResponse<T = any> {
+    code: number
+    data: T
+    msg: string
   }
   const feConfig: {
     api: {
@@ -14,11 +16,11 @@ declare global {
   }
 }
 
-declare module 'uni-ajax' {
-  interface CustomConfig {
-    custom?: Partial<{
+declare module 'alova' {
+  interface AlovaCustomTypes {
+    meta: {
       loading: boolean
       error: boolean
-    }>
+    }
   }
 }

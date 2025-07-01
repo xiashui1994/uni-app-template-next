@@ -1,10 +1,10 @@
 import { createSSRApp } from 'vue'
-import ajax from '@/plugins/uni-ajax'
+import alova from '@/plugins/alova'
 import { setupStore } from '@/store'
 import App from './App.vue'
 import 'virtual:uno.css'
 
-uni.$http = ajax
+uni.$http = alova
 
 export function createApp() {
   const app = createSSRApp(App)

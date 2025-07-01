@@ -13,7 +13,7 @@
 const demoData = ref({ text: '' })
 
 async function getDemo() {
-  const res = await uni.$http.get('/v1/demo')
+  const res = await uni.$http.Get<ApiResponse>('/v1/demo')
   demoData.value = res.data
 }
 </script>
